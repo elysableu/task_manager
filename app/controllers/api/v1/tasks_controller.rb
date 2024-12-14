@@ -5,6 +5,7 @@ class Api::V1::TasksController < ApplicationController
   end
 
   def show
+    # binding.pry
     render json: Task.find(params[:id])
   end
 
